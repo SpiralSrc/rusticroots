@@ -27,21 +27,87 @@ export const servicesData = [
   {
     name: "Haircuts",
     img: img1,
+    subData: [
+      {
+        service: "Kids",
+        price: "20",
+      },
+      {
+        service: "Men",
+        price: "20",
+      },
+      {
+        service: "Women",
+        price: "40",
+      },
+    ],
   },
   {
     name: "Coloring",
     img: img2,
+    subData: [
+      {
+        service: "Colors",
+        price: " ",
+      },
+      {
+        service: "Highlights",
+        price: " ",
+      },
+      {
+        service: "Ombre/Balayage",
+        price: " ",
+      },
+      {
+        service: "Touch ups",
+        price: " ",
+      },
+    ],
   },
   {
     name: "Perms",
     img: img3,
+    subData: [
+      {
+        service: "Short hair",
+        price: " ",
+      },
+      {
+        service: "Long hair",
+        price: " ",
+      },
+    ],
   },
   {
     name: "Treatments",
     img: img4,
+    subData: [
+      {
+        service: "Conditioning",
+        price: "$35",
+      },
+      {
+        service: "Scalp treatments",
+        price: " ",
+      },
+      {
+        service: "Keratin Treatment",
+        price: " ",
+      },
+    ],
   },
   {
-    name: "Lashes",
+    name: "Extras",
     img: img5,
+    subData: [
+      {
+        service: "Hair Extensions",
+        price: " ",
+      },
+      {
+        service: "Lashes",
+        price: "",
+      },
+    ],
   },
 ];
