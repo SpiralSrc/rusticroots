@@ -1,5 +1,5 @@
 import Image from "next/image";
-import heroImage from "../../public/assets/rrslogo.png";
+import heroImage from "../../../public/assets/rrslogo.png";
 
 export default function Hero() {
   return (

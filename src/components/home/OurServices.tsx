@@ -15,7 +15,7 @@ const OurServices = () => {
           {servicesData.map((item) => (
             <article
               key={item.name}
-              className="flex flex-col rounded-t-[25%] overflow-hidden bg-orange-950/20 backdrop-blur-md"
+              className="flex flex-col rounded-t-[25%] overflow-hidden bg-orange-950/20 backdrop-blur-md border-4 border-orange-400/40"
             >
               <div className="relative w-80 h-[450px]">
                 <Image

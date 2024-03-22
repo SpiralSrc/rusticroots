@@ -15,8 +15,6 @@ export default function NavBar() {
   const path = usePathname();
   const home = "/";
 
-  
-
   useEffect(() => {
     const handleScroll = (): void => {
       if (navRef.current) {
@@ -28,9 +26,13 @@ export default function NavBar() {
           window.scrollY > 40 * 16
             ? setLogoScrolled(true)
             : setLogoScrolled(false);
-        } else {
-          logoRef.current.style.opacity = "1";
         }
+      }
+    };
+
+    const handlePageReload = (): void => {
+      if (path === home) {
+        window.location.reload();
       }
     };
 
@@ -38,7 +40,7 @@ export default function NavBar() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [path]);
+  }, [path, logoRef]);
 
   return (
     <nav ref={navRef} className={`nav ${isScrolled ? "scrolled z-50" : ""}`}>
