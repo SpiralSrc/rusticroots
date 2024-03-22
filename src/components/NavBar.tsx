@@ -15,51 +15,49 @@ export default function NavBar() {
   const path = usePathname();
   const home = "/";
 
-  const handleScroll = (): void => {
-    if (navRef.current) {
-      window.scrollY > 0 ? setIsScrolled(true) : setIsScrolled(false);
-    }
-
-    if (logoRef.current) {
-      if (path === home) {
-        window.scrollY > 40 * 16
-          ? setLogoScrolled(true)
-          : setLogoScrolled(false);
-      } else {
-        logoRef.current.style.opacity = "1";
-      }
-    }
-  };
+  
 
   useEffect(() => {
+    const handleScroll = (): void => {
+      if (navRef.current) {
+        window.scrollY > 0 ? setIsScrolled(true) : setIsScrolled(false);
+      }
+
+      if (logoRef.current) {
+        if (path === home) {
+          window.scrollY > 40 * 16
+            ? setLogoScrolled(true)
+            : setLogoScrolled(false);
+        } else {
+          logoRef.current.style.opacity = "1";
+        }
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [path]);
 
   return (
     <nav ref={navRef} className={`nav ${isScrolled ? "scrolled z-50" : ""}`}>
       <div className="max-w-7xl h-full flex justify-between m-auto items-center">
-        {path === home ? (
-          <Link
-            href={"/"}
-            ref={logoRef}
-            className={`logo ${logoScrolled ? "scrolledY" : ""}`}
-          >
-            <Image src={logo} alt="logo" className="w-10 h-9" />
-            <span className="font-sacramento font-bold text-2xl ml-2">
-              Rustic Roots Salon
-            </span>
-          </Link>
-        ) : (
-          <Link href={"/"} ref={logoRef} className={`logo scrolledY`}>
-            <Image src={logo} alt="logo" className="w-10 h-9" />
-            <span className="font-sacramento font-bold text-2xl ml-2">
-              Rustic Roots Salon
-            </span>
-          </Link>
-        )}
+        <Link
+          href={"/"}
+          ref={logoRef}
+          className={
+            path === home
+              ? `logo ${logoScrolled ? "scrolledY" : ""}`
+              : "logo scrolledY"
+          }
+        >
+          <Image src={logo} alt="logo" className="w-10 h-9" />
+          <span className="font-sacramento font-bold text-2xl ml-2 pt-1">
+            Rustic Roots Salon
+          </span>
+        </Link>
+
         <ul className="flex flex-row gap-10 items-center">
           {navData.map((nav) => (
             <Link
