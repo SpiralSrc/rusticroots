@@ -15,9 +15,11 @@ export default function aboutLayout({
   return (
     <section className="w-screen h-screen">
       <div className="fixed top-0 left-0 w-full h-full bg-gradient-theme -z-50">
-        <div className="fixed  top-0 left-0 -z-10 w-[50%] overflow-visible h-full opacity-15">
-          <Image src={imgPng} alt="image" fill className="object-cover" />
-        </div>
+        <Image
+          src={imgPng}
+          alt="image"
+          className="object-fill fixed bottom-0 left-0 w-[45%] h-[95%] opacity-10"
+        />
       </div>
 
       <div className="max-w-7xl h-screen m-auto ">{children}</div>
