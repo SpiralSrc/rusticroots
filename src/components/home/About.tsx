@@ -13,8 +13,8 @@ export default function About() {
 
             <div className="w-full flex flex-col gap-5 lg:text-lg">
               <p>
-                Experience the best of hairstyling <br /> and join the loving
-                family of our satisfied clients.
+                Experience the perfect blend of style and sophistication with
+                our wide range of salon services.
               </p>
               <p>
                 With years of experience, we are committed to serve <br /> your

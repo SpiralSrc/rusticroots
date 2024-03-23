@@ -10,15 +10,15 @@ export const navData = [
     link: "/",
   },
   {
-    name: "About",
-    link: "/about",
+    name: "Our Salon",
+    link: "/our-salon",
   },
   {
     name: "Services",
     link: "/our-services",
   },
   {
-    name: "Contact",
+    name: "Contact Us",
     link: "/contact",
   },
 ];
