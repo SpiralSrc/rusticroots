@@ -13,7 +13,7 @@ export default function aboutLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <section className="w-screen h-screen">
+    <section className="w-screen">
       <div className="fixed top-0 left-0 w-full h-full bg-gradient-theme -z-50">
         <Image
           src={imgPng}
@@ -22,7 +22,7 @@ export default function aboutLayout({
         />
       </div>
 
-      <div className="max-w-7xl h-screen m-auto ">{children}</div>
+      <div className="max-w-7xl h-screen m-auto pt-32">{children}</div>
     </section>
   );
 }

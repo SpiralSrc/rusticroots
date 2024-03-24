@@ -5,7 +5,7 @@ import React from "react";
 
 const OurServices = () => {
   return (
-    <section className="w-screen py-32 bg-gradient-theme2">
+    <section className="w-screen py-32 bg-gradient-theme2 relative">
       <div className="max-w-7xl m-auto p-10 lg:p-0 ">
         <h2 className="text-7xl font-sacramento font-extrabold text-center mb-28">
           Our Services

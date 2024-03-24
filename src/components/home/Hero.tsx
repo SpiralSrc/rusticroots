@@ -3,7 +3,7 @@ import heroImage from "../../../public/assets/rrslogo.png";
 
 export default function Hero() {
   return (
-    <section className="w-screen h-[90vh] bg-[url('/assets/salon5.jpg')] bg-no-repeat bg-cover bg-center">
+    <section className="w-screen h-[90vh] bg-hero-img bg-no-repeat bg-cover bg-center">
       <div className=" max-w-7xl h-full flex justify-center items-center m-auto">
         <Image
           src={heroImage}

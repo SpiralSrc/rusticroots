@@ -27,10 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${sacramento.variable}`}>
-        <main className="w-screen h-screen m-auto">
+        <div className="w-screen h-screen">
           <NavBar />
           {children}
-        </main>
+        </div>
       </body>
     </html>
   );

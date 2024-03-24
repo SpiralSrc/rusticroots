@@ -48,12 +48,12 @@ export const servicesData = [
   },
   {
     id: "2",
-    name: "Coloring",
+    name: "Colors",
     img: img2,
     subData: [
       {
         id: "21",
-        service: "Colors",
+        service: "Full Colors",
         price: " ",
       },
       {

@@ -12,8 +12,11 @@ const config: Config = {
         //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         //   "gradient-conic":
         //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "hero-img": "url('/assets/salon5.jpg')",
+        "outside-img": "url('/assets/outside.jpg')",
         "gradient-theme": "linear-gradient(-130deg, #814732d7, #5c2510)",
         "gradient-theme2": "linear-gradient(to bottom, #5c2d1cd7, #9e837a)",
+        "gradient-theme3": "linear-gradient(-130deg, #814732, #5c2510)",
       },
       fontFamily: {
         sacramento: ["var(--font-sacramento)"],
