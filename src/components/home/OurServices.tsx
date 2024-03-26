@@ -6,8 +6,8 @@ import React from "react";
 const OurServices = () => {
   return (
     <section className="w-screen py-32 bg-gradient-theme2 relative">
-      <div className="max-w-7xl m-auto p-10 lg:p-0 ">
-        <h2 className="text-7xl font-sacramento font-extrabold text-center mb-28">
+      <div className="max-w-7xl m-auto p-10 lg:p-0 border border-orange-400/40 rounded-xl">
+        <h2 className="text-7xl font-sacramento font-extrabold text-center pt-10 mb-28">
           Our Services
         </h2>
 
@@ -15,13 +15,13 @@ const OurServices = () => {
           {servicesData.map((item) => (
             <article
               key={item.name}
-              className="flex flex-col rounded-t-[25%] overflow-hidden bg-orange-950/20 backdrop-blur-md border-4 border-orange-400/40"
+              className="flex flex-col min-w-72 rounded-t-[25%] overflow-hidden bg-orange-950/20 backdrop-blur-md border-4 border-orange-400/40"
             >
-              <div className="relative w-80 h-[450px]">
+              <div className="relative w-72 h-[400px]">
                 <Image
                   src={item.img}
                   alt={item.name}
-                  className="object-cover"
+                  className="object-fill"
                   fill
                 />
               </div>
@@ -35,7 +35,7 @@ const OurServices = () => {
         <div className="w-full flex justify-center mt-10">
           <Link
             href={"/our-services"}
-            className="py-4 px-4 bg-orange-950/40 rounded-3xl text-lg my-10"
+            className="py-4 px-4 bg-orange-950/40 rounded-3xl shadow-xl text-lg my-10"
           >
             Click here for more info...
           </Link>

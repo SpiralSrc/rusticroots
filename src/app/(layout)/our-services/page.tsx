@@ -11,8 +11,8 @@ export default function page() {
       </header>
       <div className="w-[80%] m-auto py-10">
         <p className="italic">
-          *Due to the fact that stylists operates independently, prices may
-          vary. Please contact us for more information.
+          *Due to the fact that stylists operate independently, prices may vary.
+          Please contact us for more information.
         </p>
       </div>
       <ServicesList />

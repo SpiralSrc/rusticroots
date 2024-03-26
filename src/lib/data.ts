@@ -18,7 +18,7 @@ export const navData = [
     link: "/our-services",
   },
   {
-    name: "Contact Us",
+    name: "Contact",
     link: "/contact",
   },
 ];
