@@ -9,9 +9,6 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        //   "gradient-conic":
-        //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "hero-img": "url('/assets/salon5.jpg')",
         "outside-img": "url('/assets/outside.jpg')",
         "gradient-theme": "linear-gradient(-130deg, #814732d7, #5c2510)",
@@ -22,6 +19,15 @@ const config: Config = {
         sacramento: ["var(--font-sacramento)"],
         inter: ["var(--font-inter)"],
       },
+    },
+    screens: {
+      xxs: "380px",
+      xs: "460px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
     },
   },
   plugins: [],

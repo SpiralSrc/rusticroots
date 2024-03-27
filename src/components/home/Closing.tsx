@@ -2,12 +2,12 @@ import Link from "next/link";
 
 const Closing = () => {
   return (
-    <section className="w-screen h-[50rem] m-auto bg-gradient-theme pt-20">
+    <section className="w-screen h-[50rem] m-auto bg-gradient-theme pt-10 lg:pt-20">
       <div className="max-w-7xl h-full m-auto flex flex-col justify-center items-center">
-        <span className="text-7xl font-sacramento font-extrabold text-center mb-20">
+        <span className="text-4xl px-3 lg:px-0 md:text-5xl xl:text-7xl font-sacramento font-extrabold text-center mb-20">
           “Life isn’t perfect, but your hair can be!”
         </span>
-        <p className="text-center text-xl">
+        <p className="text-center text-lg md:text-xl">
           <br /> Book your appointment today!
         </p>
         <div className="flex justify-center items-center">

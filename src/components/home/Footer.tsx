@@ -12,17 +12,19 @@ const Footer = () => {
   const path = usePathname();
 
   return (
-    <footer className="w-screen bg-gradient-theme3">
+    <footer className="w-screen bg-transparent">
       <div className="max-w-6xl m-auto p-16">
-        <div className="w-full flex flex-row flex-wrap justify-around items-center border-b border-orange-400/40 pb-10">
-          <Image
-            src={rrslogo}
-            width={150}
-            height={100}
-            alt="logo"
-            className="opacity-60"
-          />
-          <div className="flex flex-row items-center gap-3 text-left">
+        <div className="w-full flex flex-col sm:flex-row justify-center gap-5 sm:justify-around items-center border-b border-orange-400/40 pb-10">
+          <div className="w-28 h-20 relative">
+            <Image
+              src={rrslogo}
+              fill
+              alt="logo"
+              className="object-cover opacity-60"
+            />
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-center gap-3 text-left">
             {navData.map((nav, id) => (
               <Link
                 key={id}
@@ -37,7 +39,7 @@ const Footer = () => {
               </Link>
             ))}
           </div>
-          <div className="flex flex-col justify-center items-center gap-6">
+          <div className="flex flex-col justify-center items-center gap-6 mt-3 sm:mt-0">
             <div className="flex flex-col justify-center items-center gap-2">
               <h3 className="font-medium text-md">Follow us</h3>
               <RiFacebookCircleLine size={25} />

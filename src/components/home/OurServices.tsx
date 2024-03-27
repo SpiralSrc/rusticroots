@@ -6,8 +6,8 @@ import React from "react";
 const OurServices = () => {
   return (
     <section className="w-screen py-32 bg-gradient-theme2 relative">
-      <div className="max-w-7xl m-auto p-10 lg:p-0 border border-orange-400/40 rounded-xl">
-        <h2 className="text-7xl font-sacramento font-extrabold text-center pt-10 mb-28">
+      <div className="max-w-7xl m-auto p-10 lg:p-0 border border-orange-400/40 rounded-xl mx-3">
+        <h2 className="text-5xl md:text-6xl lg:text-7xl font-sacramento font-extrabold text-center pt-10 mb-28">
           Our Services
         </h2>
 
@@ -15,9 +15,9 @@ const OurServices = () => {
           {servicesData.map((item) => (
             <article
               key={item.name}
-              className="flex flex-col min-w-72 rounded-t-[25%] overflow-hidden bg-orange-950/20 backdrop-blur-md border-4 border-orange-400/40"
+              className="flex flex-col min-w-64 rounded-t-[25%] overflow-hidden bg-orange-950/20 backdrop-blur-md border-4 border-orange-400/40"
             >
-              <div className="relative w-72 h-[400px]">
+              <div className="relative w-64 h-[380px]">
                 <Image
                   src={item.img}
                   alt={item.name}

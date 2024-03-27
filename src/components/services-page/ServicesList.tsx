@@ -2,21 +2,20 @@ import { servicesData } from "@/lib/data";
 
 const ServicesList = () => {
   return (
-    <div className="w-full flex flex-col justify-start items-center gap-5">
+    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-5">
       {servicesData.map((service, id) => (
         <div
           key={id}
-          className="w-[80%] flex flex-col items-center justify-start border border-orange-400/40 py-5 px-10 rounded-lg"
+          className="min-w-56 xs:min-w-72 min-h-72 border mx-auto border-orange-400/40 py-5 rounded-lg"
         >
           <h3 className="w-full text-center border-b border-orange-400/40 py-3 font-sacramento text-4xl font-bold">
             {service.name}
           </h3>
-          <div className="w-full flex flex-col justify-start gap-10 py-5">
+          <div className="w-full flex flex-col justify-center gap-5 py-5">
             {service.subData.map((sub, id) => (
-              <div key={id} className="w-full flex flex-row justify-between">
-                <p>{sub.service}</p>
-                <p>{sub.price}</p>
-              </div>
+              <ul key={id} className="flex justify-start pl-10">
+                <li className="list-disc">{sub.service}</li>
+              </ul>
             ))}
           </div>
         </div>

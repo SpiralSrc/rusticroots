@@ -4,6 +4,8 @@ import Footer from "@/components/home/Footer";
 import Hero from "@/components/home/Hero";
 import Location from "@/components/home/Location";
 import OurServices from "@/components/home/OurServices";
+import outsideImg from "../../public/assets/outside.jpg";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,9 +16,17 @@ export default function Home() {
       <About />
       <OurServices />
       <Closing />
-      <div className="w-screen bg-gradient-theme3 overflow-hidden">
-        <div className="w-full rounded-b[20%] bg-outside-img bg-cover bg-fixed bg-center pb-20">
-          <div className="h-[600px] "></div>
+      <div className="w-screen bg-gradient-theme3 overflow-hidden pb-20">
+        <div className="w-full h-64 xs:h-80 sm:h-[400px] lg:h-[60vh] lg:bg-outside-img bg-cover bg-fixed bg-left-top lg:bg-left-top xl:bg-center pb-20">
+          <div className="lg:h-[400px] xl:h-[600px] "></div>
+          <div className="relative w-full h-64 xs:h-80 sm:h-[400px] rounded-b-[25%] shadow-lg overflow-hidden lg:hidden">
+            <Image
+              src={outsideImg}
+              alt="image"
+              fill
+              className="object-cover object-top"
+            />
+          </div>
         </div>
 
         <Footer />
