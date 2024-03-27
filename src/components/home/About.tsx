@@ -21,7 +21,7 @@ export default function About() {
               <div className="flex items-start">
                 <Link
                   href={"/our-salon"}
-                  className="py-3 px-5 rounded-3xl mt-10 bg-orange-400/20 transition-all ease-in-out duration-500 shadow-xl border border-transparent hover:border-orange-200/40 hover:text-orange-950/80 hover:bg-orange-200/20"
+                  className="py-4 px-6 rounded-3xl mt-10 bg-orange-400/20 transition-all ease-in-out duration-500 shadow-xl border border-transparent hover:border-orange-950/20 hover:text-orange-950/80 hover:bg-orange-200/20"
                 >
                   Read more...
                 </Link>

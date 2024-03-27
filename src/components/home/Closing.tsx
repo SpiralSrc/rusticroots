@@ -13,7 +13,7 @@ const Closing = () => {
         <div className="flex justify-center items-center">
           <Link
             href={"/contact"}
-            className="py-4 px-5 bg-orange-950/20 shadow-xl rounded-xl my-20"
+            className="py-4 px-5  shadow-xl rounded-3xl my-20 bg-orange-400/20 transition-all ease-in-out duration-500 border border-transparent hover:border-orange-950/40 hover:text-orange-950/80 hover:bg-orange-200/20"
           >
             Get in touch with us
           </Link>

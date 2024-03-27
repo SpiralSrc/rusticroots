@@ -4,7 +4,7 @@ import ServicesList from "@/components/services-page/ServicesList";
 export default function page() {
   return (
     <div className="w-[90%] mx-auto flex flex-col items-center justify-center mb-20 pb-20 backdrop-blur-sm rounded-xl border border-orange-400/30 px-10 lg:px-0">
-      <h1 className="text-center text-5xl font-extrabold font-sacramento py-10">
+      <h1 className="w-[70%] text-center text-5xl font-extrabold font-sacramento pt-10 pb-5 border-b border-orange-400/30">
         Our Services
       </h1>
 
