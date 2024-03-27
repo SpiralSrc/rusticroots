@@ -13,8 +13,8 @@ const Footer = () => {
 
   return (
     <footer className="w-screen bg-transparent">
-      <div className="max-w-6xl m-auto p-16">
-        <div className="w-full flex flex-col sm:flex-row justify-center gap-5 sm:justify-around items-center border-b border-orange-400/40 pb-10">
+      <div className="max-w-6xl m-auto pt-16 pb-16 lg:pb-0">
+        <div className="w-full flex flex-col sm:flex-row justify-center gap-5 sm:justify-around items-center border-b border-orange-400/40 pb-5">
           <div className="w-28 h-20 relative">
             <Image
               src={rrslogo}
@@ -31,8 +31,8 @@ const Footer = () => {
                 href={nav.link}
                 className={`${
                   nav.link === path
-                    ? "text-orange-950/60 font-md"
-                    : "font-md hover:text-orange-950/40 transition-all duration-500 ease-in-out"
+                    ? "text-orange-300/70 font-bold"
+                    : "font-md hover:text-orange-300/70 transition-all duration-500 ease-in-out"
                 }`}
               >
                 {nav.name}
@@ -42,7 +42,13 @@ const Footer = () => {
           <div className="flex flex-col justify-center items-center gap-6 mt-3 sm:mt-0">
             <div className="flex flex-col justify-center items-center gap-2">
               <h3 className="font-medium text-md">Follow us</h3>
-              <RiFacebookCircleLine size={25} />
+              <a
+                href="https://www.facebook.com/groups/750893062229940"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <RiFacebookCircleLine size={25} />
+              </a>
             </div>
           </div>
         </div>

@@ -75,8 +75,8 @@ export default function NavBar() {
                 href={nav.link}
                 className={`${
                   nav.link === path
-                    ? "text-orange-950/60 font-md"
-                    : "font-md hover:text-orange-950/40 transition-all duration-500 ease-in-out"
+                    ? "text-orange-300/70 font-bold"
+                    : "font-md hover:text-orange-300/70 transition-all duration-500 ease-in-out"
                 }`}
               >
                 {nav.name}

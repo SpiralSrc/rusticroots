@@ -12,7 +12,7 @@ const OurServices = () => {
             Our Services
           </h2>
           <div className="flex justify-center">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14  rounded-top justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12  rounded-top place-content-center">
               {servicesData.map((item) => (
                 <article
                   key={item.name}

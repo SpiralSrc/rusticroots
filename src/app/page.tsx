@@ -17,8 +17,8 @@ export default function Home() {
       <OurServices />
       <Closing />
       <div className="w-screen bg-gradient-theme3 overflow-hidden pb-20">
-        <div className="w-full h-64 xs:h-80 sm:h-[400px] lg:h-[60vh] lg:bg-outside-img bg-cover bg-fixed bg-left-top lg:bg-left-top xl:bg-center pb-20">
-          <div className="lg:h-[400px] xl:h-[600px] "></div>
+        <div className="w-full h-64 xs:h-80 sm:h-[400px] lg:h-[70vh] lg:bg-outside-img bg-cover bg-fixed bg-left-top lg:bg-left-top xl:bg-center pb-20">
+          <div className="hidden lg:h-[500px] xl:h-[700px] "></div>
           <div className="relative w-full h-64 xs:h-80 sm:h-[400px] rounded-b-[25%] shadow-lg overflow-hidden lg:hidden">
             <Image
               src={outsideImg}
