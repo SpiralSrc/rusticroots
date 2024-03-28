@@ -18,6 +18,10 @@ export const navData = [
     link: "/our-services",
   },
   {
+    name: "Gallery",
+    link: "/gallery",
+  },
+  {
     name: "Contact",
     link: "/contact",
   },

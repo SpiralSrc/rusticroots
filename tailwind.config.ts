@@ -19,6 +19,9 @@ const config: Config = {
         sacramento: ["var(--font-sacramento)"],
         inter: ["var(--font-inter)"],
       },
+      boxShadow: {
+        "inset-shadow": "inset 0 -3em 3em rgb(0 200 0 / 30%)",
+      },
     },
     screens: {
       xxs: "380px",
