@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <div className="w-screen pt-24">
-      <div className="max-w-7xl xs:m-auto flex flex-col justify-center items-center backdrop-blur-sm mx-2">
+      <div className="max-w-7xl xs:m-auto flex flex-col justify-center items-center backdrop-blur-sm mx-2 mb-32">
         <h1 className="w-[70%] text-center text-5xl xl:text-6xl font-extrabold font-sacramento pt-10 pb-4 mb-10 ">
           Gallery
         </h1>
