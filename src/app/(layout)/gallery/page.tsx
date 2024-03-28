@@ -1,4 +1,3 @@
-import Gallery from "@/components/gallery/Gallery";
 import GalleryPage from "@/components/gallery/GalleryPage";
 import { Metadata } from "next";
 import React from "react";
