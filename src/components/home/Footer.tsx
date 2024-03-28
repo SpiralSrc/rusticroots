@@ -31,8 +31,8 @@ const Footer = () => {
                 href={nav.link}
                 className={`${
                   nav.link === path
-                    ? "text-orange-300/70 font-bold"
-                    : "font-md hover:text-orange-300/70 transition-all duration-500 ease-in-out"
+                    ? "text-orange-300/30 font-bold"
+                    : "font-md hover:text-orange-300/30 transition-all duration-500 ease-in-out"
                 }`}
               >
                 {nav.name}
