@@ -51,7 +51,10 @@ export default function NavBar() {
 
   return (
     <nav>
-      <div ref={navRef} className={`nav ${isScrolled ? "scrolled z-20" : ""}`}>
+      <div
+        ref={navRef}
+        className={`nav z-[1] ${isScrolled ? "scrolled z-20" : ""}`}
+      >
         <div className="max-w-7xl h-full flex justify-between m-auto items-center">
           <Link
             href={"/"}
