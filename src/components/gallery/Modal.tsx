@@ -21,7 +21,7 @@ const Modal = ({ selectedImg, setSelectedImg }: any) => {
             onClick={(e) => e.stopPropagation()}
             className="top-[45%] left-[45%] flex justify-center self-center"
           >
-            <div className="w-[25vw] h-[60vh] relative">
+            <div className="w-[280px] h-[340px] xxs:w-[320px] xxs:h-[400px] lg:w-[400px] lg:h-[500px] relative">
               <Image
                 src={selectedImg.image}
                 alt="image"
