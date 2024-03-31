@@ -18,7 +18,7 @@ export default function aboutLayout({
         <Image
           src={imgPng}
           alt="image"
-          className="object-fill fixed bottom-0 left-0 w-[45%] h-[95%] opacity-10"
+          className="object-fill fixed bottom-0 left-0 w-[85%] xs:w-[75%] h-[80%] md:w-[45%] md:h-[85%] opacity-10"
         />
       </div>
 

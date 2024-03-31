@@ -11,6 +11,7 @@ html {
 /* Firefox */
 * {
   scrollbar-width: 0;
+  scrollbar-gutter: 0;
 }
 
 /* Chrome, Edge and Safari */
@@ -25,7 +26,7 @@ body::-webkit-scrollbar {
 /* General stylings */
 
 body {
-  /* background-color: rgb(99, 72, 72); */
+  overflow-x: hidden;
   color: antiquewhite;
   scrollbar-width: 0;
 }
