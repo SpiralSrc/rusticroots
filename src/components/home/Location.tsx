@@ -6,7 +6,7 @@ const Map = dynamic(() => import("../ui/Map"), {
 
 const Location = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 backdrop-blur p-10 lg:p-20 rounded-xl border border-orange-400/40 gap-14">
+    <div className="grid grid-cols-1 lg:grid-cols-2 backdrop-blur p-5 xs:p-10 lg:p-20 rounded-xl border border-orange-400/40 gap-14">
       <div className=" rounded-xl  border border-orange-400/40 p-5">
         <h2 className="text-4xl text-center font-sacramento font-extrabold pt-5 pb-5">
           Salon Hours
