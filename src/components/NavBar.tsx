@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import logo from "../../public/assets/icon.png";
 import { navData } from "@/lib/data";
@@ -42,7 +43,7 @@ export default function NavBar() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [path, logoRef]);
+  }, [path, logoRef, navRef]);
 
   // Mobile Menu
   const handleMenu = () => {

@@ -26,7 +26,7 @@ body::-webkit-scrollbar {
 /* General stylings */
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   color: antiquewhite;
   scrollbar-width: 0;
 }

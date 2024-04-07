@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${sacramento.variable}`}>
-        <div className="w-screen h-screen overflow-y-scroll">
+        <div className="w-screen h-screen">
           <NavBar />
           {children}
         </div>
