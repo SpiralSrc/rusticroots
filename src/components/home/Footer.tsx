@@ -54,7 +54,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col justify-center items-center gap-2 pt-5">
           <p className="text-sm text-orange-50/30">
-            Rustic Root Salon &copy;<span>{year}. All rights reserved.</span>
+            Rustic Roots Salon &copy;<span>{year}. All rights reserved.</span>
           </p>
         </div>
       </div>
