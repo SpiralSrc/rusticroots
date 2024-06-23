@@ -11,12 +11,21 @@ const sacramento = Sacramento({
   subsets: ["latin-ext"],
 });
 
+const baseURL = process.env.RRS_URL;
+
 export const metadata: Metadata = {
+  metadataBase: new URL(`${baseURL}`),
   title: {
     default: "Rustic Roots Salon",
     template: "%s | Rustic Roots Salon",
   },
   description: "Your friendly salon in town.",
+  openGraph: {
+    title: "Rustic Roots Salon",
+    description: "Your friendly salon in town.",
+    url: baseURL,
+    siteName: "Rustic Roots Salon",
+  },
 };
 
 export default function RootLayout({
