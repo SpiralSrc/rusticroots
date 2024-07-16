@@ -24,7 +24,7 @@ const Location = () => {
             Address
           </h2>
           <div className="w-full flex flex-col justify-center text-center pb-5">
-            <p>216 S Whitcomb Ave, Tonasket, Wa 98855</p>
+            <p>416 Whitcomb Ave, Tonasket, Wa 98855</p>
             <p>509-322-7022</p>
             <p>aliciaj98855@yahoo.com</p>
           </div>

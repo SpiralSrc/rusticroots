@@ -32,10 +32,9 @@ export default function page() {
           </h3>
           <div className="w-full lg:w-3/4 flex m-auto">
             <p className="mb-10 indent-10">
-              Discover the ultimate fusion of fashion and beauty at our salon,
-              linked to Maeson Jean and Co Boutique. Explore a diverse range of
-              clothing, accessories, and beauty services to elevate your style
-              and indulge in self-care.
+              Discover the ultimate fusion of fashion and beauty at our salon.
+              Explore a diverse range of clothing, accessories, and beauty
+              services to elevate your style and indulge in self-care.
             </p>
           </div>
 
