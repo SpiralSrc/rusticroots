@@ -4,7 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { Icon } from "leaflet";
 
-const defaultPosition: [number, number] = [48.7058021, -119.4387591];
+const defaultPosition: [number, number] = [48.70399, -119.44036];
 
 function Map() {
   const icon: Icon = new Icon({
